@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import tracksView, trackDetailView, ArtistsView, ArtistDetailView, AlbumsView, AlbumDetailView
+from .views import tracksView, trackDetailView, ArtistsView, ArtistDetailView, \
+                    AlbumsView, AlbumDetailView, PlaylistView
 
 urlpatterns = [
     path('tracks/', tracksView.as_view(), name='tracks' ),
@@ -8,4 +9,5 @@ urlpatterns = [
     path('artists/<int:pk>/', ArtistDetailView.as_view(), name='artist' ),
     path('albums/', AlbumsView.as_view(), name='artist' ),
     path('albums/<int:pk>/', AlbumDetailView.as_view(), name='artist' ),
+    path('playlists/', PlaylistView.as_view(), name='playlists' ),
 ]   

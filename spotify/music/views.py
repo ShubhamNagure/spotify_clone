@@ -1,5 +1,5 @@
-from .models import Artist,Album, Track
-from .serializers import ArtistsSerializer,AlbumSerializer, TrackSerializer
+from .models import Artist,Album, Track, Playlist
+from .serializers import ArtistsSerializer,AlbumSerializer, TrackSerializer, PlaylistSerializer
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 
@@ -34,3 +34,7 @@ class AlbumDetailView(generics.RetrieveAPIView):
     serializer_class = AlbumSerializer
     permission_classes = [IsAuthenticated]
 
+class PlaylistView(generics.ListCreateAPIView):
+    queryset = Playlist.objects.all()
+    serializer_class = PlaylistSerializer
+    # permission_classes = [IsAuthenticated]

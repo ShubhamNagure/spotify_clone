@@ -1,4 +1,4 @@
-from .models import Artist, Album, Track
+from .models import Artist, Album, Track, Playlist
 from rest_framework.serializers import ModelSerializer
 
 
@@ -17,3 +17,9 @@ class TrackSerializer(ModelSerializer):
     class Meta:
         model = Track
         fields = '__all__'
+
+class PlaylistSerializer(ModelSerializer):
+    class Meta:
+        model = Playlist
+        fields = '__all__'
+        
