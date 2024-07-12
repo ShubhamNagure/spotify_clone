@@ -1,5 +1,3 @@
-Sure, here is a detailed README for your Spotify clone Django REST Framework application:
-
 ---
 
 # Spotify Clone
