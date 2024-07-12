@@ -1,5 +1,3 @@
----
-
 # Spotify Clone
 
 A Django REST Framework application that mimics the basic functionalities of Spotify, including managing tracks, playlists, and user authentication.
@@ -30,7 +28,7 @@ A Django REST Framework application that mimics the basic functionalities of Spo
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/spotify_clone.git
+    git clone https://github.com/ShubhamNagure/spotify_clone.git
     cd spotify_clone
     ```
 
@@ -105,6 +103,4 @@ Contributions are welcome! Please follow these steps:
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
 
-This README provides a comprehensive overview of your project, including setup instructions, usage guidelines, and API endpoints. Make sure to adjust the repository URL and other specific details to match your actual project configuration.
