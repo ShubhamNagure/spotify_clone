@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'music',
     'rest_framework_simplejwt',
+    'rest_registration',
 ]
 
 MIDDLEWARE = [
@@ -146,4 +147,9 @@ SIMPLE_JWT = {
     'USER_ID_CLAIM': 'user_id',
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
+}
+REST_REGISTRATION = {
+    'REGISTER_VERIFICATION_ENABLED': False,
+    'RESET_PASSWORD_VERIFICATION_ENABLED': False,
+    'REGISTER_EMAIL_VERIFICATION_ENABLED': False,
 }
